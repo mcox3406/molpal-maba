@@ -1,0 +1,13 @@
+{
+    "iter": 2,
+    "scores": "/net/eofe-data002/pool001/mcox340/molpal-maba/molpal_test/tutorial/molpal_1k/chkpts/iter_2/scores.pkl",
+    "new_scores": "/net/eofe-data002/pool001/mcox340/molpal-maba/molpal_test/tutorial/molpal_1k/chkpts/iter_2/new_scores.pkl",
+    "adjustment": 0,
+    "updated_model": false,
+    "recent_avgs": [
+        6.290000000000001,
+        6.380000000000001
+    ],
+    "preds": "/net/eofe-data002/pool001/mcox340/molpal-maba/molpal_test/tutorial/molpal_1k/chkpts/iter_2/preds.npz",
+    "model": "molpal_1k/chkpts/iter_2/model/model.pkl"
+}
