@@ -4,7 +4,7 @@ output-dir: molpal_1k_maba
 --retrain-from-scratch
 
 pool: lazy
-library: /pool001/mcox340/molpal-maba/molpal_maba/libraries/liquid_stock_first1k.csv
+library: libraries/liquid_stock_first1k.csv
 
 fingerprint: pair
 length: 2048
@@ -17,7 +17,7 @@ init-size: 0.05
 batch-size: 0.05
 
 objective: docking
-objective-config: /pool001/mcox340/molpal-maba/molpal_maba/configs/docking.ini
+objective-config: configs/docking.ini
 --minimize
 
 top-k: 0.01
