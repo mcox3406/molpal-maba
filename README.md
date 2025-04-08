@@ -98,6 +98,7 @@ pip install "ray[train]"
 git clone https://github.com/mcox3406/molpal.git
 cd molpal
 pip install -e .
+cd ..
 ```
 
 ## Step 5: Test the installation
@@ -105,7 +106,8 @@ pip install -e .
 Run the example calculation in the [`molpal_test`](molpal_test/) directory to check that everything works:
 ```bash
 conda activate molpal-env
-cd molpal_test
+git clone https://github.com/mcox3406/molpal-maba.git
+cd molpal-maba/molpal_test
 molpal run --config configs/sample_config.ini
 ```
 
@@ -113,7 +115,6 @@ If you're on an HPC, be sure to first get off of the login node before running m
 ```bash
 srun --partition=sched_mit_ccoley --nodes=1 --ntasks=1 --cpus-per-task=4 --mem=8G --time=02:00:00 --pty bash -i
 ```
-
 
 That's it! You now have a working installation of MolPAL with pyscreener that uses Python 3.11, PyTorch 2.6.0, PyTorch Lightning 2.5.1, and Ray 2.44.1.
 
